@@ -25,7 +25,7 @@
         background-color: teal;
         position: fixed;
         border-radius: 0px 0px 30px 30px;
-        box-shadow: 0px 25px 35px grey;
+        box-shadow: 0px 5px 25px black;
       }
       .menu {
         margin: 30px;
@@ -57,6 +57,23 @@
       #container:hover .menu {
         background-color: indigo;
       }
+      .test {
+        position: absolute;
+        top: 250px;
+        height: 100px;
+        width: 500px;
+        background-color: blue;
+      }
+      input::placeholder {
+        color: grey;
+      }
+      input {
+        size: 30px;
+      }
+      div > p::selection {
+        color: white;
+        background-color: lawngreen;
+      }
     </style>
   </head>
   <body>
@@ -69,6 +86,15 @@
       <div class="menu">shin chanmi</div>
       <div class="menu">park zion</div>
       <div class="menu">park sharon</div>
+    </div>
+    <div class="test">
+      <input type="text" placeholder="name" />
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi
+        recusandae molestiae exercitationem. Laudantium explicabo vero
+        repellendus facilis id, consequuntur doloribus nostrum quisquam incidunt
+        totam dolores ducimus unde quis sint deleniti.
+      </p>
     </div>
   </body>
 </html>
