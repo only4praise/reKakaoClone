@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fixed</title>
+    <style>
+      html {
+        margin: 0px;
+        padding: 0px;
+      }
+      body {
+        margin: 0px;
+        padding: 0px;
+        height: 1000vh;
+        width: 20px;
+      }
+      #container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 200px;
+        color: white;
+        background-color: teal;
+        position: fixed;
+        border-radius: 0px 0px 30px 30px;
+        box-shadow: 0px 25px 35px grey;
+      }
+      .menu {
+        margin: 30px;
+        color: white;
+        font-size: 35px;
+        height: 70px;
+        width: 230px;
+        border-radius: 5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid white;
+        position: relative;
+      }
+      #num {
+        position: absolute;
+        display: inline;
+        font-size: 30px;
+        padding: 20px 20px;
+        top: -50px;
+        left: -30px;
+        border-radius: 39px;
+        background-color: rgb(255, 64, 64);
+        text-align: center;
+      }
+      .menu:hover {
+        background-color: pink;
+      }
+      #container:hover .menu {
+        background-color: indigo;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div class="menu">
+        park joonho
+        <div id="num">777</div>
+      </div>
+
+      <div class="menu">shin chanmi</div>
+      <div class="menu">park zion</div>
+      <div class="menu">park sharon</div>
+    </div>
+  </body>
+</html>
